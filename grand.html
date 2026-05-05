@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Grand Egyptian Museum </title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+      section {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .gallery {
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 220px;
+        height: 150px;
+        object-fit: cover;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 10px;
+        border: 1px solid #999;
+        text-align: center;
+      }
+
+      .hidden { display: none; }
+
+    </style>
+</head>
+
+<body>
+
+  <header>
+      <nav>
+        <a href="index.html"> About-Us </a>
+        <a href="discover.html"> Discover Egypt </a>
+        <a href="karnak-temple.html"> Karnak Temple </a>
+        <a href="qaitbay.html"> Qaitbay Citadel </a>
+        <a href="grand.html"> Grand Egyptian Museum </a>
+        <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+        <a href="pyramids.html"> Pyramids of Egypt </a>
+        <a href="contact.html"> Contact-Us </a>
+      </nav>
+
+      <h1>Grand Egyptian Museum</h1>
+
+      <button onclick="setTheme('light')"> Light Mode </button>
+      <button onclick="setTheme('dark')"> Dark Mode </button>
+
+      <br><br>
+
+      <nav>
+          <a href="#about">About</a>
+          <a href="#history">History</a>
+          <a href="#collections">Collections</a>
+          <a href="#location">Location</a>
+          <a href="#media">Media</a>
+          <a href="#stats">Stats</a>
+      </nav>
+  </header>
+
+  <section>
+      <h2>Grand Egyptian Museum</h2>
+      <p>The world's largest archaeological museum dedicated to one civilization.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Museum</h2>
+    <p>
+        The Grand Egyptian Museum is one of the most important cultural landmarks in Egypt,
+        located near the Pyramids of Giza.
+    </p>
+  </section>
+
+  <section id="history">
+    <h2>Historical Background</h2>
+
+    <p>
+        The Grand Egyptian Museum project was launched to preserve and display Egypt's rich ancient heritage.
+    </p>
+
+    <p>
+        It was designed to become the largest museum in the world dedicated to ancient Egyptian civilization.
+    </p>
+
+    <p>
+        The museum includes thousands of artifacts, including treasures of King Tutankhamun.
+    </p>
+  </section>
+
+
+  <section id="collections">
+    <h2> Collections </h2>
+
+    <div class="grid">
+      <ul>
+        <li>Tutankhamun Treasures</li>
+        <li>Royal Statues</li>
+        <li>Mummies</li>
+        <li>Ancient Manuscripts</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2> Location </h2>
+    <iframe src="https://www.google.com/maps?q=Grand+Egyptian+Museum&output=embed" width="100%" height="300">
+    </iframe>
+  </section>
+
+  <section id="media" class="gallery">
+    <h2>Media Gallery</h2>
+
+    <a href="the-grand-egyptian-museum-heneghan-peng-architects_7.jpg" target="_blank">
+      <img src="grand content/the-grand-egyptian-museum-heneghan-peng-architects_7.jpg" onclick="openImage(this.src)">
+    </a>
+
+    <a href="grand content/the-grand-egyptian-museum-heneghan-peng-architects_1.jpg" target="_blank">
+      <img src="grand content/the-grand-egyptian-museum-heneghan-peng-architects_1.jpg" onclick="openImage(this.src)">
+    </a>
+
+    <a href="the-grand-egyptian-museum-heneghan-peng-architects_13.jpg" target="_blank">
+      <img src="grand content/the-grand-egyptian-museum-heneghan-peng-architects_13.jpg" onclick="openImage(this.src)">
+    </a>
+
+    <a href="the-grand-egyptian-museum-heneghan-peng-architects_4.jpg" target="_blank">
+      <img src="grand content/the-grand-egyptian-museum-heneghan-peng-architects_4.jpg" onclick="openImage(this.src)">
+    </a>
+
+    <a href="the-grand-egyptian-museum-heneghan-peng-architects_3.jpg" target="_blank">
+      <img src="grand content/the-grand-egyptian-museum-heneghan-peng-architects_3.jpg" onclick="openImage(this.src)">
+    </a>
+
+  </section>
+
+  <section>
+    <h2> Video </h2>
+      <video width="600" controls>
+        <source src="grand content/The Grand Egyptian Museum.mp4">
+      </video>
+  </section>
+
+  <section id="stats">
+    <h2>Statistics</h2>
+
+    <table border="1">
+      <tr>
+        <th> Artifacts </th>
+        <th> Visitors </th>
+        <th> Area </th>
+      </tr>
+      <tr>
+        <td> 100,000+ </td>
+        <td> Millions </td>
+        <td> 500,000 m² </td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p> &copy; Egypt Heritage 2026 </p>
+  </footer>
+
+  <script src="script.js"> </script>
+</body>
+</html>

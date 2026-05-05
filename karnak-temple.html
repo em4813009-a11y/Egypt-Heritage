@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Karnak Temple </title>
+    <link rel="stylesheet" href="style.css">
+
+    <style media="screen">
+
+    section {
+      padding: 15px;
+      margin: 15px;
+      border-radius: 8px
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px
+    }
+    .gallery img {
+      width: 19%;
+      border-radius: 8px
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px
+    }
+    th {
+      background: #333;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"> About-Us </a>
+        <a href="discover.html"> Discover Egypt </a>
+        <a href="karnak-temple.html"> Karnak Temple </a>
+        <a href="qaitbay.html"> Qaitbay Citadel </a>
+        <a href="grand.html"> Grand Egyptian Museum </a>
+        <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+        <a href="pyramids.html"> Pyramids of Egypt </a>
+        <a href="contact.html"> Contact-Us </a>
+      </nav>
+
+      <h1 class="karnak"> Karnak Temple </h1>
+
+      <button onclick="setTheme('light')"> Light Mode </button>
+      <button onclick="setTheme('dark')"> Dark Mode </button>
+
+      <br><br>
+
+      <nav>
+        <a href="#about"> About </a>
+        <a href="#gallery"> Gallery </a>
+        <a href="#info"> Info </a>
+        <a href="#video"> Video </a>
+        <a href="#location"> Location </a>
+      </nav>
+
+    </header>
+
+    <section id="about">
+      <h2> About Karnak Temple </h2>
+
+      <p> Karnak Temple is one of the largest ancient relligious sites in the world.
+          It is located id Luxor, Egypt and was built over many centuries.
+      </p>
+    </section>
+    <hr>
+    <section id="gallery">
+      <h2> Gallery </h2>
+
+      <div class="gallery">
+        <img src="karnak content/karnak1.jpg">
+        <img src="karnak content/karnak2.jpg">
+        <img src="karnak content/karnak3.jpg">
+        <img src="karnak content/karnak4.jpg">
+        <img src="karnak content/karnak5.jpg">
+        <img src="karnak content/karnak6.jpg">
+        <img src="karnak content/karnak7.jpg">
+        <img src="karnak content/karnak8.jpg">
+        <img src="karnak content/karnak9.jpg">
+        <img src="karnak content/karnak10.jpg">
+        <img src="karnak content/karnak11.jpg">
+        <img src="karnak content/karnak12.jpg">
+        <img src="karnak content/karnak13.jpg">
+        <img src="karnak content/karnak14.jpg">
+        <img src="karnak content/karnak15.jpg">
+        <img src="karnak content/karnak16.jpg">
+        <img src="karnak content/karnak17.jpg">
+        <img src="karnak content/karnak18.jpg">
+        <img src="karnak content/karnak19.jpg">
+        <img src="karnak content/karnak20.jpg">
+      </div>
+    </section>
+    <hr>
+    <section id="info">
+      <h2> Quick Information </h2>
+
+      <table>
+        <tr>
+          <th> Item </th>
+          <th> Details </th>
+        </tr>
+        <tr>
+          <td> Location </td>
+          <td> Luxor, Egypt </td>
+        </tr>
+        <tr>
+          <td> Main God </td>
+          <td> Amun-Ra </td>
+        </tr>
+        <tr>
+          <td> Famous Hall </td>
+          <td> Great Hypostyle (134 column) </td>
+        </tr>
+        <tr>
+          <td> Sacred Feature </td>
+          <td> Sacred Lake </td>
+        </tr>
+        <tr>
+          <td> Famous Queen </td>
+          <td> Hatshepsut </td>
+        </tr>
+        <tr>
+          <td> Special Road </td>
+          <td> Avenue of Sphinxes </td>
+        </tr>
+        <tr>
+          <td> Construction Time </td>
+          <td> More than 2000 years </td>
+        </tr>
+      </table>
+    </section>
+    <hr>
+    <section id="video">
+      <h2> Karnak Temple Video </h2>
+
+      <video controls  poster="karnak content/karnak temple.jpg" width="50%" height="350">
+
+        <source src="karnak content/Karnak Temple.mp4" type="video/mp4">
+
+        <p> Your Browser Doesn't Support The Video Teg. </p>
+
+      </video>
+    </section>
+    <hr>
+    <section id="location">
+      <h2> Location </h2>
+
+      <iframe src="https://www.google.com/maps?q=Karnak+Temple&output=embed" width="100%" height="300"></iframe>
+
+    </section>
+
+    <footer>
+      <p> &copy; Egypt Heritage 2026 </p>
+    </footer>
+
+    <script src="script.js"> </script>
+
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Bibliotheca Alexandrina </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+      .images-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 10px;
+      }
+
+      .images-container img {
+          width: 18%;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 8px;
+      }
+
+      .text-frame {
+          border: 2px solid #ddd;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin-bottom: 25px;
+          text-align: center;
+      }
+
+      body, .text-frame {
+          transition: background-color 0.3s, color 0.3s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"> About-Us </a>
+        <a href="discover.html"> Discover Egypt </a>
+        <a href="karnak-temple.html"> Karnak Temple </a>
+        <a href="qaitbay.html"> Qaitbay Citadel </a>
+        <a href="grand.html"> Grand Egyptian Museum </a>
+        <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+        <a href="pyramids.html"> Pyramids of Egypt </a>
+        <a href="contact.html"> Contact-Us </a>
+      </nav>
+
+      <h1>Bibliotheca Alexandrina</h1>
+
+      <button onclick="setTheme('light')"> Light Mode </button>
+      <button onclick="setTheme('dark')"> Dark Mode </button>
+
+    </header>
+
+    <div class="text-frame">
+      <h2> About The library </h2>
+      <p>The Alexandria Library in the past was really a legend. They built it for a long time in the era of the Ptolemies, meaning around the third century BC, and some people say that its idea was due to Alexander the Great himself. It was the largest library in the ancient world, full of hundreds of thousands of papyrus rolls (they said it would reach 700,000 books or more). Scientists from every part were going to read, research and write: Like Euclid, who laid the foundation of engineering, Archimedes, and others. But as you know, the fire that occurred in 48 BC (when Julius Caesar was fighting) destroyed a large part of it, and with time it completely disappeared. It was a beacon of true knowledge, not just a library, this was the center of great minds.</p>
+    </div>
+
+    <div class="gallery-container" style="text-align: center; margin-top: 30px; margin-bottom: 20px;">
+      <h2> Gallery </h2>
+    </div>
+
+    <div class="images-container">
+      <img src="bibliotheca content/Al1.jpg">
+      <img src="bibliotheca content/Al2.jpg">
+      <img src="bibliotheca content/Al3.jpg">
+      <img src="bibliotheca content/Al4.jpg">
+      <img src="bibliotheca content/Al5.jpg">
+      <img src="bibliotheca content/Al6.jpg">
+      <img src="bibliotheca content/Al7.jpg">
+      <img src="bibliotheca content/Al8.jpg">
+      <img src="bibliotheca content/Al9.jpg">
+      <img src="bibliotheca content/Al10.jpg">
+    </div>
+
+    <div class="video-container" style="text-align: center; margin-bottom: 30px;">
+        <h2> Video </h2>
+
+        <video width="100%" height="315" controls style="max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <source src="bibliotheca content/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <footer>
+      <p> &copy; Egypt Heritage 2026 </p>
+    </footer>
+
+    <script src="script.js"> </script>
+  </body>
+</html>

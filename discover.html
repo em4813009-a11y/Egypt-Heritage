@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Discover Egypt </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            height: 90vh;
+            background-image: url('https://images.unsplash.com/photo-1572252009286-268acec5ca0a');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background-color: gold;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button: hover {
+            background-color: orange;
+        }
+
+        .about {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            width: 70%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+      <nav>
+        <a href="index.html"> About-Us </a>
+        <a href="discover.html"> Discover Egypt </a>
+        <a href="karnak-temple.html"> Karnak Temple </a>
+        <a href="qaitbay.html"> Qaitbay Citadel </a>
+        <a href="grand.html"> Grand Egyptian Museum </a>
+        <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+        <a href="pyramids.html"> Pyramids of Egypt </a>
+        <a href="contact.html"> Contact-Us </a>
+      </nav>
+
+      <br>
+
+      <h1> Discover Egypt </h1>
+
+      <br>
+
+      <button onclick="setTheme('light')"> Light Mode </button>
+      <button onclick="setTheme('dark')"> Dark Mode </button>
+
+      <br>
+
+    </header>
+
+    <div class="hero">
+        <h1>Discover Egypt</h1>
+        <p>Explore the beauty of ancient and modern Egypt</p>
+        <button onclick="alert('Welcome to Egypt!')">Start Exploring</button>
+    </div>
+
+    <div class="about">
+        <h2>About Our Website</h2>
+        <p>
+            This website introduces some of the most famous places in Egypt like the pyramids,
+            the Egyptian museum, Karnak temple, Alexandria library, and more.
+            Our goal is to help you explore Egypt easily.
+        </p>
+    </div>
+
+    <footer>
+      <p> &copy; Egypt Heritage 2026 </p>
+    </footer>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Contact Us </title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb
+}
+
+button {
+  text-align: center;
+}
+
+p {
+    color: #black;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    width: 350px;
+    margin: 10px auto;
+    border-radius: 10px;
+    animation: fade 1s;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#error {
+    color: red;
+}
+
+#successMsg {
+    color: lightgreen;
+    display: none;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+</style>
+
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="index.html"> About-Us </a>
+    <a href="discover.html"> Discover Egypt </a>
+    <a href="karnak-temple.html"> Karnak Temple </a>
+    <a href="qaitbay.html"> Qaitbay Citadel </a>
+    <a href="grand.html"> Grand Egyptian Museum </a>
+    <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+    <a href="pyramids.html"> Pyramids of Egypt </a>
+    <a href="contact.html"> Contact-Us </a>
+  </nav>
+
+  <h1> Contact Us </h1>
+
+  <button onclick="setTheme('light')"> Light Mode </button>
+  <button onclick="setTheme('dark')"> Dark Mode </button>
+
+  <p> We would love to hear from you. Send us your message! </p>
+</header>
+
+
+<form onsubmit="return false;">
+    <label> Name: </label>
+    <input id="name" type="text" placeholder="Your Name">
+
+    <label> Email: </label>
+    <input id="email" type="email" placeholder="Your Email">
+
+    <label> Phone: </label>
+    <input id="phone" type="text" placeholder="Your Phone">
+    <label> Subject: </label>
+    <input id="subject" type="text" placeholder="Subject">
+
+    <label> Message: </label>
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <button onclick="sendForm()"> Send Message </button>
+
+    <p id="error"> </p>
+
+    <p id="successMsg"> Message Sent Successfully </p>
+
+</form>
+
+<p> We usually reply within 24 hours </p>
+
+<footer>
+  <p> &copy; Egypt Heritage 2026 </p>
+</footer>
+
+<script>
+
+function sendForm() {
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+        document.getElementById("error").innerText = "Please fill all required fields!";
+        document.getElementById("successMsg").style.display = "none";
+    }
+    else {
+        document.getElementById("error").innerText = "";
+        document.getElementById("successMsg").style.display = "block";
+    }
+    if (!email.includes("@")) {
+      document.getElementById("error").innerText = "Invalid email!";
+    }
+    localStorage.setItem("username", name);
+}
+</script>
+
+<script src="script.js"> </script>
+
+</body>
+</html>

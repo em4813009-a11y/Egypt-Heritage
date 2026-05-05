@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>The Pyramids Of Egypt</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+   .special {
+      text-align: center;
+
+    }
+
+    table {
+      border-width: 3px ;
+      border-color: black ;
+      border-style: solid ;
+      border-collapse: collapse;
+
+    }
+
+    .start {
+      background-color:  rgb(73, 73, 114);
+      padding: 8px;
+      margin: 8px
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .card img {
+      height: 300px;
+      width: 400px;
+      border-radius: 8px
+    }
+
+    .name {
+      text-shadow: 1px 1px 1px black;
+    }
+
+    h3,h2 {
+      text-shadow: 1px 1px 1px black;
+      padding: 8px
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"> About-Us </a>
+      <a href="discover.html"> Discover Egypt </a>
+      <a href="karnak-temple.html"> Karnak Temple </a>
+      <a href="qaitbay.html"> Qaitbay Citadel </a>
+      <a href="grand.html"> Grand Egyptian Museum </a>
+      <a href="bibliotheca.html"> Bibliotheca Alexandrina </a>
+      <a href="pyramids.html"> Pyramids of Egypt </a>
+      <a href="contact.html"> Contact-Us </a>
+    </nav>
+
+    <h1>The Pyramids Of Egypt</h1>
+
+    <button onclick="setTheme('light')"> Light Mode </button>
+    <button onclick="setTheme('dark')"> Dark Mode </button>
+
+  </header>
+  <section>
+    <div class="special">
+      <img src="pyramids content/pyramids of giza.jpg" height="400px" width="cover">
+      <p> The Pyramids of Giza, located on the outskirts of Cairo, Egypt, stand as the lastremaining Wonder of
+          the Ancient World. Constructed during the 4th Dynasty of the Old Kingdom (c. 2580–2560 BC), these
+          architectural marvels served as eternal tombs for the pharaohs Khufu, Khafre, and Menkaure.
+          The Great Pyramid of Khufu is the largest, originally rising to 146.6 meters. It was the world's tallest
+          man-made structure for over 3,800 years, built from approximately 2.3 million limestone and granite blocks.
+          Its precision remains a mystery, with the sides aligned almost perfectly to the cardinal points of the
+          compass. Adjacent to the pyramids lies the Great Sphinx, a limestone statue with a lion's body and a
+          pharaoh's head, believed to represent Khafre. The site also includes smaller queen’s pyramids, causeways,
+          and a recently excavated workers' village, which suggests the labor was performed by skilled, paid
+          workers rather than slaves.
+          Today, the Giza Plateau is a UNESCO World Heritage site. Visitors can explore the burial chambers,
+          visit the nearby Grand Egyptian Museum, and witness the nightly Sound and Light show that illuminates
+          these ancient giants, bridging the gap between modern civilization and the dawn of history. </p>
+    </div>
+
+    <br>
+
+    <h2> quick info </h2>
+
+    <table border="1">
+      <tr class="start">
+        <td>item</td>
+        <td>info</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>Giza</td>
+      </tr>
+      <tr>
+        <td>Number of Pyramids</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>Over 4500 years old</td>
+      </tr>
+      <tr>
+        <td>Tallest Pyramid</td>
+        <td>The Great Pyramid of Khufu</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>The only one of the Seven Wonders of the Ancient World</td>
+      </tr>
+      <tr>
+        <td>Material</td>
+        <td> Built from approximately 2.3 million stone blocks</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="container">
+      <div class="card">
+        <img src="pyramids content/pyramid of Khufu.jpg" >
+        <p class="name">The Great Pyramid of Giza (Khufu)</p>
+        <p> The oldest and largest, originally standing 146.6 meters (481 ft) tall.
+            It was the world's tallest man-made structure for
+            over 3,800 years and is the only surviving member of the Seven Wonders of the Ancient World </p>
+      </div>
+
+      <div class="card">
+        <img src="pyramids content/pyramid of Khafre.jpg" >
+        <p class="name">The Pyramid of Khafre</p>
+        <p> Appears taller than the Great Pyramid because it sits on higher ground; it is easily identified by the remaining white limestone casing at its peak. </p>
+      </div>
+
+      <div class="card">
+        <img src="pyramids content/pyramid of Menkaure.jpg">
+        <p class="name">The Pyramid of Menkaure</p>
+        <p> The smallest of the main three. Recent 2026 research using radar and ultrasound has
+            identified hidden air-filled voids behind its eastern face, suggesting undiscovered chambers or entrances. </p>
+      </div>
+    </div>
+
+    <h3>Do you know?</h3>
+    <p>
+        Despite centuries of study, the pyramids continue to reveal new "secrets" through advanced technology:
+        The "Big Void": Using muon tomography (scanning with cosmic particles), scientists discovered a massive,
+        unexplored void at least 30 meters long situated above the Grand Gallery in the Great Pyramid.
+        Hidden Chambers in Menkaure: In 2026, researchers using radar found previously unknown air-filled voids
+        behind the eastern face of the Pyramid of Menkaure, hinting at undiscovered chambers or passages
+        [Previous Turn].
+        Missing Mummies: Although built as royal tombs, no mummies have ever been found inside the Great Pyramid.
+        They were likely looted in antiquity, but some speculate the true burial chambers remain hidden.
+    </p>
+
+  </section>
+
+  <footer>
+    <p> &copy; Egypt Heritage 2026 </p>
+  </footer>
+
+  <script src="script.js"> </script>
+
+</body>
+</html>
